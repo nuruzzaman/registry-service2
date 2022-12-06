@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+      server:
+        composite:
+          - type: git
+            uri: https://github.com/nuruzzaman/data2ml-service-registry-config
+            ignore-local-ssh-settings: true
+            private-key: my-private-key
+      label: main
